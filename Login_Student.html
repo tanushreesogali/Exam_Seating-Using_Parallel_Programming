@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student login</title>
+    <link rel="stylesheet" href="stylestd.css">
+</head>
+<body>
+    <div class="student">
+        <h1>Student Login</h1>
+        <form action="Connect_Student.php" method="post">
+            <label id="reg" for="studentRegNo">Registration Number:</label>
+            <input type="text" id="studentRegNo" name="studentRegNo" required><br><br>
+            <label id="dept"for="studentDept">Department:</label>
+            <select id="studentDept" name="studentDept">
+                <option value="CSE Core">CSE Core</option>
+                <option value="CSE Spl.">CSE Spl.</option>
+                <option value="Electrical">Electrical</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Civil">Civil</option>
+            </select><br>
+            <label id="subj"for="studentSubject">Choose a Subject:</label>
+            <select id="studentSubject" name="studentSubject">
+                <option value="seating_cao.csv">CAO</option>
+                <option value="seating_cn.csv">CN</option>
+                <option value="seating_discrete.csv">Discrete</option>
+                <option value="seating_dsa.csv">DSA</option>
+            </select><br>
+            <button id="subm" type="submit" name="studentSubmit">Submit</button>
+        </form>
+        <a href="Home.html" class="home-button">Go to Home</a>
+    </div>
+</body>
+</html>
